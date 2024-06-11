@@ -10,40 +10,46 @@
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        
-            <div class="navbar">
+    <section class="container-fluid" id="home1">
+        <nav>
                 <div class="logo">
-                    <img src="https://e7.pngegg.com/pngimages/480/581/png-clipart-logo-e-commerce-digital-marketing-brand-trade-ecommerce-text-service.png" width="100px">
+                    <img src="https://prod-bof-media.s3.eu-west-1.amazonaws.com/import/filestack/z2OC32OLSkWODRkgwZnZ_c2101aa153fda068b36023e9191e4b4e.png" width="69px">
+                </div> 
+                  
+                <div>
+                <ul id="menuItems">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li> 
+                </ul>
                 </div>
+            
+            <div div class="icon">
+    <a href="ACCOUNT.html">    <i class="fa-solid fa-user" id="form-open" ></i></a>
+        <i class="fa-solid fa-cart-shopping"></i>
+        
+            <div class="menu1" onclick="menutoggle()">
+        <i class="fa-solid fa-bars"></i>
+            
             </div>
-            <nav>
-            <ul id="menuitems">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li> 
-                <li><a href="#Account">Account</a></li>
-            </ul>
-        
-        <img src="https://i.pinimg.com/474x/04/82/e1/0482e11d4b1775b020b003d84a9b20de.jpg" width="30px">
-        
-        <img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-menu-icon-image_1344445.jpg" class="menu1" onclick="menutoggle()">
+            </div>
         </nav>
 
 
-  
-<div class="account">
-    <div class="container">
+<div class="account-page">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-2">
-                <img src="https://cdn.shopify.com/app-store/listing_images/532861601aa89a5e70f5d56d075e82ac/icon/CLq7q92-4_0CEAE=.png" width="100%">
+                <img src="IMGS/pic4.png" width="100%">
             </div>
             <div class="col-2">
                 <div class="form-container">
-                    <div class="form btn">
+                    <div class="form-btn">
                         <span onclick="login()">Login</span>
                         <span onclick="register()">Register</span>
                         <hr id="indicator">
@@ -71,23 +77,21 @@
 
 
 
-
-
-
-
-
-
-
-
-<div class="footer">
-    <div class="container">
+<section class="footer">
+    <div class="cointainer">
         <div class="row">
             <div class="footer1">
-<h3>Download our app</h3>
-<p>Download for APP for android and ios </p>
+                   <h3>Download our app</h3>
+                   <p class="extra">Download for APP for android and ios </p>
+
+    <img src="IMGS/playstore.png" width="170px">
+    <div class="up">  <img src="IMGS/apple.png" width="140px"></div>
+  
+
             </div>
             <div class="footer2">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis facilis quibusdam impedit sit aliquid, ullam pariatur veniam ratione ex. Sunt!</p>
+                <img src="https://prod-bof-media.s3.eu-west-1.amazonaws.com/import/filestack/z2OC32OLSkWODRkgwZnZ_c2101aa153fda068b36023e9191e4b4e.png">
+                <p class="extra">Lorem ipsum dolor sit amet consectetur,adipisicing elit. Perspiciatis facilis quibusdam impedit sit aliquid, ullam pariatur veniam ratione ex. Sunt!</p>
             </div>
             <div class="footer3">
                 <h3>useful links</h3>
@@ -98,7 +102,8 @@
                     <li>Join affliate </li>
                 </ul>
             </div>
-            <div class="footer4">
+        
+            <div class="footer3">
                 <h3>Follow us</h3>
                 <ul>
                     <li>Facebook</li>
@@ -110,27 +115,26 @@
         </div>
         <hr>
         <p class="copyright"> copyright 2024 - Abhisek Dash</p>
-    </div>
-</div>
+
+</section>
 
 
 
 
 
 <script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight="0px";
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight="0px";
     function menutoggle(){
-        if( menuitems.style.maxHeight="0px")
+        if( menuItems.style.maxHeight=="0px")
         {
-            menuitems.style.maxHeight="200px"
+            menuItems.style.maxHeight="200px"
         }
         else{
-            menuitems.style.maxHeight="0px"
+            menuItems.style.maxHeight="0px"
         }
     }
 </script>
-
 
 
 
@@ -151,6 +155,9 @@
         indicator.style.transform="translateX(0px)";
 
     }
+
+
+
         
     
 </script>

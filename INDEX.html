@@ -10,9 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
-
-
-
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -24,7 +21,7 @@
                 </div> 
                   
                 <div>
-                <ul>
+                <ul id="menuItems">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#About">About</a></li>
@@ -51,7 +48,7 @@
         <br>
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tenetur deserunt explicabo sapiente numquam, ad hic sint voluptatem placeat enim ex non cum fugiat, praesentium ducimus recusandae culpa nostrum dignissimos.</P>
         <br>
-        <a href="" class="btn">Explore Now &#8594;</a>
+        <a href="" class="btn &#8594">Explore Now &#8594;</a>
     </div>
     <div class="col-2">
         <img src="IMGS/pic4.png">
@@ -427,15 +424,15 @@
 
 
 <script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight="0px";
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight="0px";
     function menutoggle(){
-        if( menuitems.style.maxHeight="0px")
+        if( menuItems.style.maxHeight=="0px")
         {
-            menuitems.style.maxHeight="200px"
+            menuItems.style.maxHeight="200px"
         }
         else{
-            menuitems.style.maxHeight="0px"
+            menuItems.style.maxHeight="0px"
         }
     }
 </script>
